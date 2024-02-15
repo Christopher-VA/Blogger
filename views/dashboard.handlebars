@@ -1,0 +1,13 @@
+<div>
+    <h1>Dashboard</h1>
+    <a href="/newpost" class="btn btn-primary">Create a New Post</a>
+</div>
+{{#each posts}}
+    <div class="post-container post mb-3">
+      <h2><a href="/post/{{id}}">{{title}}</a></h2>
+      <a href="/editpost/{{id}}">Edit Post</a>
+      <button class="post-delete" data-post-id="{{id}}">Delete</button>
+    </div>
+{{/each}}
+
+<script src="/js/postDelete.js"></script>

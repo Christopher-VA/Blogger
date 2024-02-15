@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blogger Blog</title>
   <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -16,12 +15,11 @@
       <nav>
         {{#if logged_in}}
         <a href="/homepage">Homepage</a> |
-        <a href="/"></a> |
-        <a href="/"></a>
+        <a href="/dashboard">dashboard</a> |
+        <a href="/logout">logout</a>
         {{else}}
         <a href="/homepage">Homepage</a> |
-        <a href="/checkout">Checkout</a> |
-        <a href="/login">Login</a>
+        <a href="/dashboard">dashboard</a>
         {{/if}}
       </nav>
     </header>

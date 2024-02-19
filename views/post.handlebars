@@ -2,3 +2,26 @@
     <h1>{{title}}</h1>
     <p>{{content}}</p>
 </div>
+{{#if logged_in}}
+<form action="comment-form">
+    <div>
+        <label for="commenting">Add Comment</label>
+        <textarea
+          class="form-control"
+          id="commenter"
+          rows="2"
+          placeholder="Add a comment!"
+        ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{{/if}}
+<div>
+    <h2>Comments</h2>
+    {{#each Comments}}
+    <div>
+        <p>{{comment}}</p>
+    </div>
+</div>
+
+<script src="/js/comment.js"></script>
